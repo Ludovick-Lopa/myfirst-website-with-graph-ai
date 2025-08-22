@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludovick L. Lopa | Generative AI Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        #sky-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+            color: #ffffff;
+        }
+        /* Glassmorphism effect for content cards */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <!-- Canvas for animated background -->
+    <canvas id="sky-canvas"></canvas>
+
+    <!-- Main content wrapper -->
+    <div class="content-wrapper min-h-screen p-4 sm:p-6 md:p-8">
+        <div class="max-w-4xl mx-auto">
+
+            <!-- Header Section -->
+            <header class="text-center py-16">
+                <h1 class="text-4xl md:text-6xl font-bold text-white text-glow">Ludovick L. Lopa, MD, MPH</h1>
+                <p class="mt-4 text-xl md:text-2xl text-gray-300">Portfolio for Generative AI for Work & Research</p>
+            </header>
+
+            <!-- About Me Section -->
+            <section id="about-me" class="card rounded-2xl p-6 md:p-8 mb-12">
+                <h2 class="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-orange-300">About Me</h2>
+                <p class="text-gray-200 leading-relaxed">
+                    I’m a public health practitioner with over 10 years of experience strengthening healthcare systems in resource-limited settings. My work focuses on healthcare leadership, Quality Improvement (QI), and leveraging data to drive impactful decisions. Passionate about collaboration and capacity building, I empower healthcare teams to improve patient outcomes and foster cultures of professionalism and empathy. I bring strategic insight and hands-on experience to deliver sustainable, high-quality care in dynamic environments.
+                </p>
+            </section>
+
+            <!-- About the Course Section -->
+            <section id="about-course" class="card rounded-2xl p-6 md:p-8 mb-12">
+                <h2 class="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-indigo-400">About the Course</h2>
+                <p class="text-lg text-gray-200 mb-6">This portfolio showcases my work from the 8-week course, <span class="font-semibold">"Generative AI for Work & Research Productivity,"</span> which explores the use of no-code AI tools for task automation and enhanced productivity.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+                    <div class="bg-white/5 p-4 rounded-lg">Module 1: Websites, Documents & Presentations</div>
+                    <div class="bg-white/5 p-4 rounded-lg">Module 2: AI-Automated Data Analysis</div>
+                    <div class="bg-white/5 p-4 rounded-lg">Module 3: GenAI for Research & Text Analysis</div>
+                    <div class="bg-white/5 p-4 rounded-lg">Module 4: Custom GPTs and Chatbots</div>
+                    <div class="bg-white/5 p-4 rounded-lg">Module 5: AI for Task Automation</div>
+                    <div class="bg-white/5 p-4 rounded-lg">Module 6: GenAI for Communication and Outreach</div>
+                    <div class="bg-white/5 p-4 rounded-lg md:col-span-2">Module 7: Capstone Project & Showcase</div>
+                </div>
+            </section>
+
+            <!-- Weekly Submissions Section -->
+            <section id="submissions" class="card rounded-2xl p-6 md:p-8 mb-12">
+                <h2 class="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-teal-400">My Weekly Submissions</h2>
+                <div class="space-y-4">
+                    <!-- Placeholder items for 8 weeks -->
+                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-gray-200">Week 1 Submission</span>
+                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-gray-200">Week 2 Submission</span>
+                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-gray-200">Week 3 Submission</span>
+                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-gray-200">Week 4 Submission</span>
+                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-gray-200">Week 5 Submission</span>
+                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-gray-200">Week 6 Submission</span>
+                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-gray-200">Week 7 Submission</span>
+                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    </div>
+                     <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-gray-200">Week 8: Final Capstone Project</span>
+                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="text-center py-8">
+                <p class="text-gray-400">&copy; 2024 Ludovick L. Lopa. Website created for course portfolio.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        // Get the canvas and its 2D rendering context
+        const canvas = document.getElementById('sky-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let width, height;
+        let clouds = [];
+
+        // Cloud class to create cloud objects
+        class Cloud {
+            constructor() {
+                this.reset();
+                // Set initial y position randomly
+                this.y = Math.random() * height;
+            }
+
+            reset() {
+                // Start clouds from the right side of the screen
+                this.x = width + Math.random() * 200;
+                this.y = Math.random() * (height * 0.7); // Keep clouds in the upper 70% of the sky
+                this.speed = 0.1 + Math.random() * 0.3;
+                this.radius = 20 + Math.random() * 40;
+                this.parts = [];
+                const numParts = 5 + Math.floor(Math.random() * 10);
+                for (let i = 0; i < numParts; i++) {
+                    this.parts.push({
+                        offsetX: (Math.random() * 2 - 1) * this.radius * 1.5,
+                        offsetY: (Math.random() * 2 - 1) * this.radius * 0.5,
+                        radius: this.radius * (0.5 + Math.random() * 0.5)
+                    });
+                }
+            }
+
+            // Move the cloud to the left
+            update() {
+                this.x -= this.speed;
+                if (this.x + this.radius * 3 < 0) {
+                    this.reset();
+                }
+            }
+
+            // Draw the cloud on the canvas
+            draw() {
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+                ctx.beginPath();
+                this.parts.forEach(part => {
+                    ctx.moveTo(this.x + part.offsetX, this.y + part.offsetY);
+                    ctx.arc(this.x + part.offsetX, this.y + part.offsetY, part.radius, 0, Math.PI * 2);
+                });
+                ctx.fill();
+            }
+        }
+
+        // Function to set canvas size and handle window resize
+        function resizeCanvas() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        // Initialize clouds
+        function init() {
+            resizeCanvas();
+            clouds = [];
+            const numClouds = Math.floor(width / 100); // More clouds on wider screens
+            for (let i = 0; i < numClouds; i++) {
+                clouds.push(new Cloud());
+            }
+        }
+
+        // Animation loop
+        function animate() {
+            // 1. Clear the canvas
+            ctx.clearRect(0, 0, width, height);
+
+            // 2. Draw the background gradient for an evening sky
+            const skyGradient = ctx.createLinearGradient(0, 0, 0, height);
+            skyGradient.addColorStop(0, '#1e293b'); // Dark blue slate at the top
+            skyGradient.addColorStop(0.6, '#4a2a4a'); // Dusky purple
+            skyGradient.addColorStop(1, '#8c3b3b'); // Faint red/orange at the horizon
+            ctx.fillStyle = skyGradient;
+            ctx.fillRect(0, 0, width, height);
+
+            // 3. Draw the sun (like Jupiter)
+            const sunX = width * 0.75;
+            const sunY = height * 0.4;
+            const sunRadius = Math.min(width, height) * 0.1;
+            
+            // Sun glow
+            ctx.shadowColor = '#ff6b6b';
+            ctx.shadowBlur = 60;
+
+            const sunGradient = ctx.createRadialGradient(sunX, sunY, sunRadius * 0.5, sunX, sunY, sunRadius);
+            sunGradient.addColorStop(0, 'rgba(255, 220, 180, 1)'); // Bright center
+            sunGradient.addColorStop(0.5, 'rgba(255, 107, 107, 1)'); // Reddish middle
+            sunGradient.addColorStop(1, 'rgba(192, 57, 43, 0.8)'); // Darker edge
+            ctx.fillStyle = sunGradient;
+            
+            ctx.beginPath();
+            ctx.arc(sunX, sunY, sunRadius, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Reset shadow for other elements
+            ctx.shadowBlur = 0;
+
+            // 4. Update and draw clouds
+            clouds.forEach(cloud => {
+                cloud.update();
+                cloud.draw();
+            });
+
+            // 5. Request the next frame
+            requestAnimationFrame(animate);
+        }
+
+        // Event listeners
+        window.addEventListener('resize', init);
+
+        // Start the animation
+        init();
+        animate();
+    </script>
+</body>
+</html>
