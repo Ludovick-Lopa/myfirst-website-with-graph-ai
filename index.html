@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ludovick L. Lopa | Generative AI Portfolio</title>
+    <title>Ludovick L. Lopa | Public Health & Generative AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden;
         }
         #sky-canvas {
             position: fixed;
@@ -26,7 +26,6 @@
             z-index: 1;
             color: #ffffff;
         }
-        /* Glassmorphism effect for content cards */
         .card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(12px);
@@ -36,120 +35,167 @@
         .text-glow {
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
         }
+        .section-heading {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
     </style>
 </head>
 <body class="bg-gray-900">
-    <!-- Canvas for animated background -->
     <canvas id="sky-canvas"></canvas>
 
-    <!-- Main content wrapper -->
     <div class="content-wrapper min-h-screen p-4 sm:p-6 md:p-8">
-        <div class="max-w-4xl mx-auto">
+        <div class="max-w-5xl mx-auto">
 
-            <!-- Header Section -->
             <header class="flex flex-col-reverse md:flex-row items-center justify-between text-center md:text-left py-12 md:py-16">
-                <!-- Header Text -->
                 <div class="mt-8 md:mt-0">
                     <h1 class="text-4xl md:text-6xl font-bold text-white text-glow">Ludovick L. Lopa, MD, MPH</h1>
-                    <p class="mt-4 text-xl md:text-2xl text-gray-300">Portfolio for Generative AI for Work & Research</p>
+                    <p class="mt-2 text-xl md:text-2xl text-gray-300">Public Health Practitioner | Healthcare Leader | Generative AI Enthusiast</p>
+                    <p class="mt-4 text-gray-400 text-sm">Contacts: +255718137408 | Email: recolopa1990@gmail.com</p>
                 </div>
-                <!-- Profile Image -->
                 <div class="flex-shrink-0 md:ml-12">
-                    <img class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover" src="https://github.com/Ludovick-Lopa/myfirst-website-with-graph-ai/blob/main/Passport2_Lopa.jpg?raw=true" alt="A photo of Ludovick L. Lopa" onerror="this.onerror=null;this.src='https://placehold.co/160x160/111827/FFFFFF?text=L.L.';">
+                    <img class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-lg" src="https://github.com/Ludovick-Lopa/myfirst-website-with-graph-ai/blob/main/Passport2_Lopa.jpg?raw=true" alt="A photo of Ludovick L. Lopa" onerror="this.onerror=null;this.src='https://placehold.co/160x160/111827/FFFFFF?text=L.L.';">
                 </div>
             </header>
 
-            <!-- About Me Section -->
             <section id="about-me" class="card rounded-2xl p-6 md:p-8 mb-12">
-                <h2 class="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-orange-300">About Me</h2>
-                <p class="text-gray-200 leading-relaxed">
-                    I’m a public health practitioner with over 10 years of experience strengthening healthcare systems in resource-limited settings. My work focuses on healthcare leadership, Quality Improvement (QI), and leveraging data to drive impactful decisions. Passionate about collaboration and capacity building, I empower healthcare teams to improve patient outcomes and foster cultures of professionalism and empathy. I bring strategic insight and hands-on experience to deliver sustainable, high-quality care in dynamic environments.
+                <h2 class="text-3xl font-bold mb-4 section-heading bg-gradient-to-r from-pink-400 to-orange-300">About Me</h2>
+                <p class="text-gray-200 leading-relaxed text-lg">
+                    [cite_start]I’m a public health practitioner with **over 10 years of experience** strengthening healthcare systems in resource-limited settings[cite: 31, 35]. [cite_start]My work focuses on healthcare leadership, Quality Improvement (QI), and leveraging data to drive impactful decisions[cite: 32, 36]. [cite_start]Passionate about collaboration and capacity building, I empower healthcare teams to improve patient outcomes and foster cultures of professionalism and empathy[cite: 33, 37]. [cite_start]I bring strategic insight and hands-on experience to deliver sustainable, high-quality care in dynamic environments[cite: 34, 38].
                 </p>
             </section>
 
-            <!-- About the Course Section -->
-            <section id="about-course" class="card rounded-2xl p-6 md:p-8 mb-12">
-                <h2 class="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-indigo-400">About the Course</h2>
-                <p class="text-lg text-gray-200 mb-6">This portfolio showcases my work from the 8-week course, <span class="font-semibold">"Generative AI for Work & Research Productivity,"</span> which explores the use of no-code AI tools for task automation and enhanced productivity.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
-                    <div class="bg-white/5 p-4 rounded-lg">Module 1: Websites, Documents & Presentations</div>
-                    <div class="bg-white/5 p-4 rounded-lg">Module 2: AI-Automated Data Analysis</div>
-                    <div class="bg-white/5 p-4 rounded-lg">Module 3: GenAI for Research & Text Analysis</div>
-                    <div class="bg-white/5 p-4 rounded-lg">Module 4: Custom GPTs and Chatbots</div>
-                    <div class="bg-white/5 p-4 rounded-lg">Module 5: AI for Task Automation</div>
-                    <div class="bg-white/5 p-4 rounded-lg">Module 6: GenAI for Communication and Outreach</div>
-                    <div class="bg-white/5 p-4 rounded-lg md:col-span-2">Module 7: Capstone Project & Showcase</div>
-                </div>
-            </section>
-
-            <!-- Weekly Submissions Section -->
-            <section id="submissions" class="card rounded-2xl p-6 md:p-8 mb-12">
-                <h2 class="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-teal-400">My Weekly Submissions</h2>
-                <div class="space-y-4">
-                    <!-- Placeholder items for 8 weeks -->
-                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
-                        <span class="text-gray-200">Week 1 Submission</span>
-                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+            <section id="experience" class="card rounded-2xl p-6 md:p-8 mb-12">
+                <h2 class="text-3xl font-bold mb-6 section-heading bg-gradient-to-r from-sky-300 to-indigo-400">Experience</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-100">Zonal Quality Improvement Officer</h3>
+                        <p class="text-lg text-gray-300">Christian Social Services Commission, Mwanza-Tanzania | 06/2022 to 03/2025</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-200 space-y-1">
+                            [cite_start]<li>Delivered QI consultative services to 24 hospitals, 18 health centers, and 75 dispensaries[cite: 4, 19].</li>
+                            [cite_start]<li>Trained and supported over 5,000 healthcare professionals on QI methodologies[cite: 6, 21].</li>
+                            [cite_start]<li>Supported Marburg Virus outbreak responses in Kagera through multisectoral coordination and rapid response team activation[cite: 7, 22].</li>
+                            [cite_start]<li>Collected, curated, and analyzed health data to guide evidence-based decision making and resource allocation[cite: 9, 24].</li>
+                        </ul>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
-                        <span class="text-gray-200">Week 2 Submission</span>
-                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
-                        <span class="text-gray-200">Week 3 Submission</span>
-                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
-                        <span class="text-gray-200">Week 4 Submission</span>
-                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
-                        <span class="text-gray-200">Week 5 Submission</span>
-                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
-                        <span class="text-gray-200">Week 6 Submission</span>
-                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
-                        <span class="text-gray-200">Week 7 Submission</span>
-                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
-                    </div>
-                     <div class="bg-white/5 p-4 rounded-lg flex justify-between items-center">
-                        <span class="text-gray-200">Week 8: Final Capstone Project</span>
-                        <span class="text-sm text-gray-400 italic">Link coming soon</span>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-100">Facility Manager</h3>
+                        <p class="text-lg text-gray-300">Shinyanga District Council, Shinyanga-Tanzania | 07/2018 to 06/2022</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-200 space-y-1">
+                            [cite_start]<li>Directed a **$411,417** infrastructure project, successfully constructing 10 facility buildings[cite: 14, 29].</li>
+                            [cite_start]<li>Spearheaded the development and management of comprehensive annual financial plans[cite: 13, 28].</li>
+                            [cite_start]<li>Revolutionized accessibility of services including referral systems by fostering collaboration among health stakeholders[cite: 12, 27].</li>
+                        </ul>
                     </div>
                 </div>
             </section>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <section id="skills" class="card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-3xl font-bold mb-4 section-heading bg-gradient-to-r from-yellow-300 to-red-400">Skills Highlights</h2>
+                    <div class="flex flex-wrap gap-2 text-sm">
+                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Healthcare Systems Strengthening</span>
+                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Data Analysis (R, nVIVO, STATA)</span>
+                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Quality Improvement (QI)</span>
+                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Project Management</span>
+                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Stakeholder Collaboration</span>
+                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Training & Capacity Building</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-6 mb-2 text-gray-100">Language Skills</h3>
+                    <ul class="text-gray-200 list-disc list-inside space-y-1">
+                        [cite_start]<li>**English:** Advanced (C1) [cite: 58, 79]</li>
+                        [cite_start]<li>**Swahili:** Native (C2) [cite: 57, 78]</li>
+                    </ul>
+                </section>
 
-            <!-- Footer -->
+                <section id="education" class="card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-3xl font-bold mb-4 section-heading bg-gradient-to-r from-purple-300 to-indigo-500">Education</h2>
+                    <ul class="space-y-4">
+                        <li>
+                            <p class="text-lg font-semibold text-gray-100">MSc. Healthcare Leadership</p>
+                            <p class="text-gray-300">Lancaster University | [cite_start]2025 - 2028 (ONGOING) [cite: 60, 61, 81, 82, 83]</p>
+                        </li>
+                        <li>
+                            <p class="text-lg font-semibold text-gray-100">Master of Public Health (MPH)</p>
+                            <p class="text-gray-300">Hanoi Medical University | 2019 - 2020 | [cite_start]**DISTINCTION** [cite: 63, 64, 84, 85]</p>
+                        </li>
+                        <li>
+                            <p class="text-lg font-semibold text-gray-100">Doctor of Medicine (MD)</p>
+                            <p class="text-gray-300">KCMC University | [cite_start]2009 - 2014 [cite: 65, 66, 86, 87]</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            
+            <section id="awards-certifications" class="card rounded-2xl p-6 md:p-8 mb-12">
+                <h2 class="text-3xl font-bold mb-4 section-heading bg-gradient-to-r from-teal-300 to-blue-500">Awards & Certifications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Awards</h3>
+                        <ul class="list-disc list-inside text-gray-200 space-y-1">
+                            [cite_start]<li>Outstanding academic achievement & Valedictorian, MPH (2020)[cite: 90, 110].</li>
+                            [cite_start]<li>Research Excellence Scholarship, Hanoi Medical University (2019–2020)[cite: 91, 111].</li>
+                            [cite_start]<li>Norwegian Agency for Development Cooperation (Norad) sponsorship for Training in Health Data Analytics (2025)[cite: 92, 112].</li>
+                            [cite_start]<li>Commonwealth Distance Learning Scholarships (2025)[cite: 93, 113].</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Certifications</h3>
+                        <ul class="list-disc list-inside text-gray-200 space-y-1">
+                            [cite_start]<li>Advanced Cardiovascular Life Support (ACLS), AHA (2024)[cite: 144, 163].</li>
+                            [cite_start]<li>SafeCare Assessor (2022)[cite: 143, 162].</li>
+                            [cite_start]<li>Full Registration: Medical Council of Tanganyika (2018)[cite: 142, 161].</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="referees" class="card rounded-2xl p-6 md:p-8 mb-12">
+                <h2 class="text-3xl font-bold mb-6 section-heading bg-gradient-to-r from-orange-400 to-pink-500">Referees</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white/5 p-4 rounded-lg">
+                        <h3 class="font-bold text-gray-100">Dr. Andrew Cesari, MD, MSc</h3>
+                        <p class="text-sm text-gray-300">Zonal Manager, Christian Social Services Commission</p>
+                        <p class="text-sm text-gray-400 mt-2">Mobile: +255 762 751 335</p>
+                        <p class="text-sm text-gray-400">Email: acesari@cssc.or.tz</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg">
+                        <h3 class="font-bold text-gray-100">Dr. William Bendela, MD, MPH, MBA</h3>
+                        <p class="text-sm text-gray-300">Health System Strengthening Advisor, Christian Social Services Commission</p>
+                        <p class="text-sm text-gray-400 mt-2">Mobile: +255 767 388 696</p>
+                        <p class="text-sm text-gray-400">Email: wbendela@cssc.or.tz</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg">
+                        <h3 class="font-bold text-gray-100">Dr. Henry Stephen Joseph, MD, MMED</h3>
+                        <p class="text-sm text-gray-300">Assistant Director Medical Laboratories, Benjamin Mkapa Hospital</p>
+                        <p class="text-sm text-gray-400 mt-2">Mobile: +255 764 454 870</p>
+                        <p class="text-sm text-gray-400">Email: henry.joseph@bmh.or.tz</p>
+                    </div>
+                </div>
+            </section>
+
+
             <footer class="text-center py-8">
-                <p class="text-gray-400">&copy; 2024 Ludovick L. Lopa. Website created for course portfolio.</p>
+                <p class="text-gray-400">&copy; 2024 Ludovick L. Lopa. Professional Portfolio.</p>
             </footer>
 
         </div>
     </div>
 
     <script>
-        // Get the canvas and its 2D rendering context
         const canvas = document.getElementById('sky-canvas');
         const ctx = canvas.getContext('2d');
-
         let width, height;
         let clouds = [];
-
-        // Cloud class to create cloud objects
         class Cloud {
             constructor() {
                 this.reset();
-                // Set initial y position randomly
                 this.y = Math.random() * height;
             }
-
             reset() {
-                // Start clouds from the right side of the screen
                 this.x = width + Math.random() * 200;
-                this.y = Math.random() * (height * 0.7); // Keep clouds in the upper 70% of the sky
+                this.y = Math.random() * (height * 0.7);
                 this.speed = 0.1 + Math.random() * 0.3;
                 this.radius = 20 + Math.random() * 40;
                 this.parts = [];
@@ -162,16 +208,12 @@
                     });
                 }
             }
-
-            // Move the cloud to the left
             update() {
                 this.x -= this.speed;
                 if (this.x + this.radius * 3 < 0) {
                     this.reset();
                 }
             }
-
-            // Draw the cloud on the canvas
             draw() {
                 ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
                 ctx.beginPath();
@@ -182,72 +224,47 @@
                 ctx.fill();
             }
         }
-
-        // Function to set canvas size and handle window resize
         function resizeCanvas() {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
         }
-
-        // Initialize clouds
         function init() {
             resizeCanvas();
             clouds = [];
-            const numClouds = Math.floor(width / 100); // More clouds on wider screens
+            const numClouds = Math.floor(width / 100);
             for (let i = 0; i < numClouds; i++) {
                 clouds.push(new Cloud());
             }
         }
-
-        // Animation loop
         function animate() {
-            // 1. Clear the canvas
             ctx.clearRect(0, 0, width, height);
-
-            // 2. Draw the background gradient for an evening sky
             const skyGradient = ctx.createLinearGradient(0, 0, 0, height);
-            skyGradient.addColorStop(0, '#1e293b'); // Dark blue slate at the top
-            skyGradient.addColorStop(0.6, '#4a2a4a'); // Dusky purple
-            skyGradient.addColorStop(1, '#8c3b3b'); // Faint red/orange at the horizon
+            skyGradient.addColorStop(0, '#1e293b');
+            skyGradient.addColorStop(0.6, '#4a2a4a');
+            skyGradient.addColorStop(1, '#8c3b3b');
             ctx.fillStyle = skyGradient;
             ctx.fillRect(0, 0, width, height);
-
-            // 3. Draw the sun (like Jupiter)
             const sunX = width * 0.75;
             const sunY = height * 0.4;
             const sunRadius = Math.min(width, height) * 0.1;
-            
-            // Sun glow
             ctx.shadowColor = '#ff6b6b';
             ctx.shadowBlur = 60;
-
             const sunGradient = ctx.createRadialGradient(sunX, sunY, sunRadius * 0.5, sunX, sunY, sunRadius);
-            sunGradient.addColorStop(0, 'rgba(255, 220, 180, 1)'); // Bright center
-            sunGradient.addColorStop(0.5, 'rgba(255, 107, 107, 1)'); // Reddish middle
-            sunGradient.addColorStop(1, 'rgba(192, 57, 43, 0.8)'); // Darker edge
+            sunGradient.addColorStop(0, 'rgba(255, 220, 180, 1)');
+            sunGradient.addColorStop(0.5, 'rgba(255, 107, 107, 1)');
+            sunGradient.addColorStop(1, 'rgba(192, 57, 43, 0.8)');
             ctx.fillStyle = sunGradient;
-            
             ctx.beginPath();
             ctx.arc(sunX, sunY, sunRadius, 0, Math.PI * 2);
             ctx.fill();
-            
-            // Reset shadow for other elements
             ctx.shadowBlur = 0;
-
-            // 4. Update and draw clouds
             clouds.forEach(cloud => {
                 cloud.update();
                 cloud.draw();
             });
-
-            // 5. Request the next frame
             requestAnimationFrame(animate);
         }
-
-        // Event listeners
         window.addEventListener('resize', init);
-
-        // Start the animation
         init();
         animate();
     </script>
