@@ -3,270 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ludovick L. Lopa | Public Health & Generative AI</title>
+    <title>Ludovick Lopa - Generative AI Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #111827;
+            color: #E5E7EB;
         }
-        #sky-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        .content-wrapper {
-            position: relative;
-            z-index: 1;
-            color: #ffffff;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+        .section-card {
+            background-color: rgba(31, 41, 55, 0.5);
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        .text-glow {
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        nav a {
+            transition: color 0.3s ease;
         }
-        .section-heading {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+        nav a:hover {
+            color: #38bdf8;
+        }
+        .submission-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .submission-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.1), 0 4px 6px -2px rgba(56, 189, 248, 0.05);
+        }
+        /* Bouncing Animation */
+        @keyframes bounce-horizontal {
+            0% { transform: translateX(80%); }
+            100% { transform: translateX(-80%); }
+        }
+        .animate-bounce-horizontal {
+            display: inline-block;
+            white-space: nowrap;
+            animation: bounce-horizontal 10s ease-in-out infinite alternate;
         }
     </style>
 </head>
-<body class="bg-gray-900">
-    <canvas id="sky-canvas"></canvas>
+<body class="antialiased">
 
-    <div class="content-wrapper min-h-screen p-4 sm:p-6 md:p-8">
-        <div class="max-w-5xl mx-auto">
-
-            <header class="flex flex-col-reverse md:flex-row items-center justify-between text-center md:text-left py-12 md:py-16">
-                <div class="mt-8 md:mt-0">
-                    <h1 class="text-4xl md:text-6xl font-bold text-white text-glow">Ludovick L. Lopa, MD, MPH</h1>
-                    <p class="mt-2 text-xl md:text-2xl text-gray-300">Public Health Practitioner | Healthcare Leader | Generative AI Enthusiast</p>
-                    <p class="mt-4 text-gray-400 text-sm">Contacts: +255718137408 | Email: recolopa1990@gmail.com</p>
-                </div>
-                <div class="flex-shrink-0 md:ml-12">
-                    <img class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-lg" src="https://github.com/Ludovick-Lopa/myfirst-website-with-graph-ai/blob/main/Passport2_Lopa.jpg?raw=true" alt="A photo of Ludovick L. Lopa" onerror="this.onerror=null;this.src='https://placehold.co/160x160/111827/FFFFFF?text=L.L.';">
-                </div>
-            </header>
-
-            <section id="about-me" class="card rounded-2xl p-6 md:p-8 mb-12">
-                <h2 class="text-3xl font-bold mb-4 section-heading bg-gradient-to-r from-pink-400 to-orange-300">About Me</h2>
-                <p class="text-gray-200 leading-relaxed text-lg">
-                    [cite_start]I’m a public health practitioner with **over 10 years of experience** strengthening healthcare systems in resource-limited settings[cite: 31, 35]. [cite_start]My work focuses on healthcare leadership, Quality Improvement (QI), and leveraging data to drive impactful decisions[cite: 32, 36]. [cite_start]Passionate about collaboration and capacity building, I empower healthcare teams to improve patient outcomes and foster cultures of professionalism and empathy[cite: 33, 37]. [cite_start]I bring strategic insight and hands-on experience to deliver sustainable, high-quality care in dynamic environments[cite: 34, 38].
-                </p>
-            </section>
-
-            <section id="experience" class="card rounded-2xl p-6 md:p-8 mb-12">
-                <h2 class="text-3xl font-bold mb-6 section-heading bg-gradient-to-r from-sky-300 to-indigo-400">Experience</h2>
-                <div class="space-y-8">
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-100">Zonal Quality Improvement Officer</h3>
-                        <p class="text-lg text-gray-300">Christian Social Services Commission, Mwanza-Tanzania | 06/2022 to 03/2025</p>
-                        <ul class="list-disc list-inside mt-2 text-gray-200 space-y-1">
-                            [cite_start]<li>Delivered QI consultative services to 24 hospitals, 18 health centers, and 75 dispensaries[cite: 4, 19].</li>
-                            [cite_start]<li>Trained and supported over 5,000 healthcare professionals on QI methodologies[cite: 6, 21].</li>
-                            [cite_start]<li>Supported Marburg Virus outbreak responses in Kagera through multisectoral coordination and rapid response team activation[cite: 7, 22].</li>
-                            [cite_start]<li>Collected, curated, and analyzed health data to guide evidence-based decision making and resource allocation[cite: 9, 24].</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-100">Facility Manager</h3>
-                        <p class="text-lg text-gray-300">Shinyanga District Council, Shinyanga-Tanzania | 07/2018 to 06/2022</p>
-                        <ul class="list-disc list-inside mt-2 text-gray-200 space-y-1">
-                            [cite_start]<li>Directed a **$411,417** infrastructure project, successfully constructing 10 facility buildings[cite: 14, 29].</li>
-                            [cite_start]<li>Spearheaded the development and management of comprehensive annual financial plans[cite: 13, 28].</li>
-                            [cite_start]<li>Revolutionized accessibility of services including referral systems by fostering collaboration among health stakeholders[cite: 12, 27].</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <section id="skills" class="card rounded-2xl p-6 md:p-8">
-                    <h2 class="text-3xl font-bold mb-4 section-heading bg-gradient-to-r from-yellow-300 to-red-400">Skills Highlights</h2>
-                    <div class="flex flex-wrap gap-2 text-sm">
-                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Healthcare Systems Strengthening</span>
-                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Data Analysis (R, nVIVO, STATA)</span>
-                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Quality Improvement (QI)</span>
-                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Project Management</span>
-                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Stakeholder Collaboration</span>
-                        <span class="bg-white/10 text-gray-200 px-3 py-1 rounded-full">Training & Capacity Building</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mt-6 mb-2 text-gray-100">Language Skills</h3>
-                    <ul class="text-gray-200 list-disc list-inside space-y-1">
-                        [cite_start]<li>**English:** Advanced (C1) [cite: 58, 79]</li>
-                        [cite_start]<li>**Swahili:** Native (C2) [cite: 57, 78]</li>
-                    </ul>
-                </section>
-
-                <section id="education" class="card rounded-2xl p-6 md:p-8">
-                    <h2 class="text-3xl font-bold mb-4 section-heading bg-gradient-to-r from-purple-300 to-indigo-500">Education</h2>
-                    <ul class="space-y-4">
-                        <li>
-                            <p class="text-lg font-semibold text-gray-100">MSc. Healthcare Leadership</p>
-                            <p class="text-gray-300">Lancaster University | [cite_start]2025 - 2028 (ONGOING) [cite: 60, 61, 81, 82, 83]</p>
-                        </li>
-                        <li>
-                            <p class="text-lg font-semibold text-gray-100">Master of Public Health (MPH)</p>
-                            <p class="text-gray-300">Hanoi Medical University | 2019 - 2020 | [cite_start]**DISTINCTION** [cite: 63, 64, 84, 85]</p>
-                        </li>
-                        <li>
-                            <p class="text-lg font-semibold text-gray-100">Doctor of Medicine (MD)</p>
-                            <p class="text-gray-300">KCMC University | [cite_start]2009 - 2014 [cite: 65, 66, 86, 87]</p>
-                        </li>
-                    </ul>
-                </section>
+    <!-- Header & Navigation -->
+    <header class="fixed w-full z-10 bg-gray-900 bg-opacity-80 backdrop-blur-md shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-text">Generative AI Portfolio</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about-me" class="text-gray-300">About Me</a>
+                <a href="#about-course" class="text-gray-300">The Course</a>
+                <a href="#submissions" class="text-gray-300">Submissions</a>
             </div>
-            
-            <section id="awards-certifications" class="card rounded-2xl p-6 md:p-8 mb-12">
-                <h2 class="text-3xl font-bold mb-4 section-heading bg-gradient-to-r from-teal-300 to-blue-500">Awards & Certifications</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Awards</h3>
-                        <ul class="list-disc list-inside text-gray-200 space-y-1">
-                            [cite_start]<li>Outstanding academic achievement & Valedictorian, MPH (2020)[cite: 90, 110].</li>
-                            [cite_start]<li>Research Excellence Scholarship, Hanoi Medical University (2019–2020)[cite: 91, 111].</li>
-                            [cite_start]<li>Norwegian Agency for Development Cooperation (Norad) sponsorship for Training in Health Data Analytics (2025)[cite: 92, 112].</li>
-                            [cite_start]<li>Commonwealth Distance Learning Scholarships (2025)[cite: 93, 113].</li>
-                        </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('https://placehold.co/1920x1080/111827/38bdf8?text=AI');">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Generative AI for Work & Research</h1>
+                <p class="text-xl md:text-2xl text-gray-300">A portfolio by Dr. Ludovick Lopa, MD, MPH</p>
+                <!-- Moving Welcome Text -->
+                <div class="w-full overflow-hidden mt-8">
+                   <div class="text-6xl md:text-8xl font-bold gradient-text animate-bounce-horizontal">WELCOME</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="section-card rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/3 text-center">
+                        <!-- User's Photo -->
+                        <img src="https://github.com/Ludovick-Lopa/myfirst-website-with-graph-ai/blob/main/Passport2_Lopa.jpg?raw=true" alt="Dr. Ludovick Lopa" class="rounded-full w-48 h-48 mx-auto border-4 border-sky-400 object-cover">
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Certifications</h3>
-                        <ul class="list-disc list-inside text-gray-200 space-y-1">
-                            [cite_start]<li>Advanced Cardiovascular Life Support (ACLS), AHA (2024)[cite: 144, 163].</li>
-                            [cite_start]<li>SafeCare Assessor (2022)[cite: 143, 162].</li>
-                            [cite_start]<li>Full Registration: Medical Council of Tanganyika (2018)[cite: 142, 161].</li>
-                        </ul>
+                    <div class="md:w-2/3">
+                        <h2 class="text-3xl font-bold mb-4 gradient-text">About Me</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            I am a medical doctor and public health advocate with over a decade of experience transforming healthcare systems in underserved communities. I lead with empathy, data, and a commitment to Quality Improvement—empowering healthcare teams to deliver compassionate, high-impact care that truly changes lives. This AI course offers a powerful entry point for professionals with no data analytics background, unlocking the potential of large language models (LLMs) to drive smarter, more meaningful decisions.
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="referees" class="card rounded-2xl p-6 md:p-8 mb-12">
-                <h2 class="text-3xl font-bold mb-6 section-heading bg-gradient-to-r from-orange-400 to-pink-500">Referees</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="font-bold text-gray-100">Dr. Andrew Cesari, MD, MSc</h3>
-                        <p class="text-sm text-gray-300">Zonal Manager, Christian Social Services Commission</p>
-                        <p class="text-sm text-gray-400 mt-2">Mobile: +255 762 751 335</p>
-                        <p class="text-sm text-gray-400">Email: acesari@cssc.or.tz</p>
+        <!-- About the Course Section -->
+        <section id="about-course" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                 <div class="section-card rounded-lg p-8 md:p-12">
+                    <h2 class="text-3xl font-bold text-center mb-8 gradient-text">About the Course</h2>
+                    <p class="text-gray-300 text-center max-w-3xl mx-auto mb-12">
+                        This 8-week course, "Generative AI for Work & Research Productivity," focuses on leveraging no-code AI tools for task automation. It provides hands-on experience with Large Language Models (LLMs) to generate text, create websites, analyze data, and automate workflows, enhancing productivity in professional and research environments.
+                    </p>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 1: Websites, Docs & Presentations</h3>
+                            <p class="text-gray-400 text-sm">Learn how LLMs work, generate structured text (Markdown, HTML), build simple websites, and design presentations using AI assistants.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 2: AI-Automated Data Analysis</h3>
+                            <p class="text-gray-400 text-sm">Master AI tools for data analysis, file manipulation, and creating automated reports and visualizations from datasets.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 3: GenAI for Research & Text Analysis</h3>
+                            <p class="text-gray-400 text-sm">Explore AI techniques for literature searches, text analysis, knowledge synthesis, and extracting insights from large text collections.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 4: Custom GPTs and Chatbots</h3>
+                            <p class="text-gray-400 text-sm">Build custom chatbots for research assistance and knowledge management, understanding LLM architecture and retrieval augmentation.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 5: AI for Task Automation</h3>
+                            <p class="text-gray-400 text-sm">Discover strategies for automating repetitive research tasks, setting up email automations, and designing AI agents for complex workflows.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 6 & 7: Communication & Capstone</h3>
+                            <p class="text-gray-400 text-sm">Learn to use AI for research dissemination by creating summaries and visuals, and complete a capstone project to showcase your skills.</p>
+                        </div>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="font-bold text-gray-100">Dr. William Bendela, MD, MPH, MBA</h3>
-                        <p class="text-sm text-gray-300">Health System Strengthening Advisor, Christian Social Services Commission</p>
-                        <p class="text-sm text-gray-400 mt-2">Mobile: +255 767 388 696</p>
-                        <p class="text-sm text-gray-400">Email: wbendela@cssc.or.tz</p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- My Weekly Submissions Section -->
+        <section id="submissions" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 gradient-text">My Weekly Submissions</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Submission Card 1 -->
+                    <div class="submission-card section-card rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-semibold text-white mb-2">Week 1</h3>
+                        <p class="text-gray-400 mb-4">Websites, Documents & Presentations</p>
+                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="font-bold text-gray-100">Dr. Henry Stephen Joseph, MD, MMED</h3>
-                        <p class="text-sm text-gray-300">Assistant Director Medical Laboratories, Benjamin Mkapa Hospital</p>
-                        <p class="text-sm text-gray-400 mt-2">Mobile: +255 764 454 870</p>
-                        <p class="text-sm text-gray-400">Email: henry.joseph@bmh.or.tz</p>
+                    <!-- Submission Card 2 -->
+                    <div class="submission-card section-card rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-semibold text-white mb-2">Week 2</h3>
+                        <p class="text-gray-400 mb-4">AI-Automated Data Analysis</p>
+                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
+                    </div>
+                    <!-- Submission Card 3 -->
+                    <div class="submission-card section-card rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-semibold text-white mb-2">Week 3</h3>
+                        <p class="text-gray-400 mb-4">GenAI for Research & Text Analysis</p>
+                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
+                    </div>
+                    <!-- Submission Card 4 -->
+                    <div class="submission-card section-card rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-semibold text-white mb-2">Week 4</h3>
+                        <p class="text-gray-400 mb-4">Custom GPTs and Chatbots</p>
+                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
+                    </div>
+                    <!-- Submission Card 5 -->
+                    <div class="submission-card section-card rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-semibold text-white mb-2">Week 5</h3>
+                        <p class="text-gray-400 mb-4">AI for Task Automation</p>
+                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
+                    </div>
+                    <!-- Submission Card 6 -->
+                    <div class="submission-card section-card rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-semibold text-white mb-2">Week 6</h3>
+                        <p class="text-gray-400 mb-4">GenAI for Communication</p>
+                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
+                    </div>
+                    <!-- Submission Card 7 -->
+                    <div class="submission-card section-card rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-semibold text-white mb-2">Week 7</h3>
+                        <p class="text-gray-400 mb-4">Capstone Project</p>
+                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
+                    </div>
+                    <!-- Submission Card 8 -->
+                    <div class="submission-card section-card rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-semibold text-white mb-2">Week 8</h3>
+                        <p class="text-gray-400 mb-4">Final Showcase</p>
+                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
+    </main>
 
-            <footer class="text-center py-8">
-                <p class="text-gray-400">&copy; 2024 Ludovick L. Lopa. Professional Portfolio.</p>
-            </footer>
-
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2025 Ludovick L. Lopa. All Rights Reserved.</p>
         </div>
-    </div>
+    </footer>
 
     <script>
-        const canvas = document.getElementById('sky-canvas');
-        const ctx = canvas.getContext('2d');
-        let width, height;
-        let clouds = [];
-        class Cloud {
-            constructor() {
-                this.reset();
-                this.y = Math.random() * height;
-            }
-            reset() {
-                this.x = width + Math.random() * 200;
-                this.y = Math.random() * (height * 0.7);
-                this.speed = 0.1 + Math.random() * 0.3;
-                this.radius = 20 + Math.random() * 40;
-                this.parts = [];
-                const numParts = 5 + Math.floor(Math.random() * 10);
-                for (let i = 0; i < numParts; i++) {
-                    this.parts.push({
-                        offsetX: (Math.random() * 2 - 1) * this.radius * 1.5,
-                        offsetY: (Math.random() * 2 - 1) * this.radius * 0.5,
-                        radius: this.radius * (0.5 + Math.random() * 0.5)
-                    });
-                }
-            }
-            update() {
-                this.x -= this.speed;
-                if (this.x + this.radius * 3 < 0) {
-                    this.reset();
-                }
-            }
-            draw() {
-                ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
-                ctx.beginPath();
-                this.parts.forEach(part => {
-                    ctx.moveTo(this.x + part.offsetX, this.y + part.offsetY);
-                    ctx.arc(this.x + part.offsetX, this.y + part.offsetY, part.radius, 0, Math.PI * 2);
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
-                ctx.fill();
-            }
-        }
-        function resizeCanvas() {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
-        }
-        function init() {
-            resizeCanvas();
-            clouds = [];
-            const numClouds = Math.floor(width / 100);
-            for (let i = 0; i < numClouds; i++) {
-                clouds.push(new Cloud());
-            }
-        }
-        function animate() {
-            ctx.clearRect(0, 0, width, height);
-            const skyGradient = ctx.createLinearGradient(0, 0, 0, height);
-            skyGradient.addColorStop(0, '#1e293b');
-            skyGradient.addColorStop(0.6, '#4a2a4a');
-            skyGradient.addColorStop(1, '#8c3b3b');
-            ctx.fillStyle = skyGradient;
-            ctx.fillRect(0, 0, width, height);
-            const sunX = width * 0.75;
-            const sunY = height * 0.4;
-            const sunRadius = Math.min(width, height) * 0.1;
-            ctx.shadowColor = '#ff6b6b';
-            ctx.shadowBlur = 60;
-            const sunGradient = ctx.createRadialGradient(sunX, sunY, sunRadius * 0.5, sunX, sunY, sunRadius);
-            sunGradient.addColorStop(0, 'rgba(255, 220, 180, 1)');
-            sunGradient.addColorStop(0.5, 'rgba(255, 107, 107, 1)');
-            sunGradient.addColorStop(1, 'rgba(192, 57, 43, 0.8)');
-            ctx.fillStyle = sunGradient;
-            ctx.beginPath();
-            ctx.arc(sunX, sunY, sunRadius, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.shadowBlur = 0;
-            clouds.forEach(cloud => {
-                cloud.update();
-                cloud.draw();
             });
-            requestAnimationFrame(animate);
-        }
-        window.addEventListener('resize', init);
-        init();
-        animate();
+        });
     </script>
+
 </body>
 </html>
