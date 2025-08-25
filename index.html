@@ -3,214 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ludovick Lopa - Generative AI Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Ludovick Lopa - Portfolio</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #111827;
-            color: #E5E7EB;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .gradient-text {
-            background: linear-gradient(90deg, #38bdf8, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
         }
-        .section-card {
-            background-color: rgba(31, 41, 55, 0.5);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
         }
-        nav a {
-            transition: color 0.3s ease;
+        h1, h2 {
+            text-align: center;
         }
-        nav a:hover {
-            color: #38bdf8;
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
-        .submission-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .project {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .submission-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.1), 0 4px 6px -2px rgba(56, 189, 248, 0.05);
+        .project h3 {
+            margin-top: 0;
         }
-        /* Bouncing Animation */
-        @keyframes bounce-horizontal {
-            0% { transform: translateX(80%); }
-            100% { transform: translateX(-80%); }
-        }
-        .animate-bounce-horizontal {
+        .project a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
             display: inline-block;
-            white-space: nowrap;
-            animation: bounce-horizontal 10s ease-in-out infinite alternate;
+            margin-top: 10px;
+            border: 1px solid #333;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .project a:hover {
+            background-color: #333;
+            color: #fff;
         }
     </style>
 </head>
-<body class="antialiased">
+<body>
 
-    <!-- Header & Navigation -->
-    <header class="fixed w-full z-10 bg-gray-900 bg-opacity-80 backdrop-blur-md shadow-lg">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold gradient-text">Generative AI Portfolio</div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#about-me" class="text-gray-300">About Me</a>
-                <a href="#about-course" class="text-gray-300">The Course</a>
-                <a href="#submissions" class="text-gray-300">Submissions</a>
-            </div>
-        </nav>
+    <header>
+        <h1>Ludovick Lopa's Portfolio</h1>
     </header>
 
-    <!-- Main Content -->
-    <main class="pt-20">
-
-        <!-- Hero Section -->
-        <section id="hero" class="min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('https://placehold.co/1920x1080/111827/38bdf8?text=AI');">
-            <div class="container mx-auto px-6">
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Generative AI for Work & Research</h1>
-                <p class="text-xl md:text-2xl text-gray-300">A portfolio by Dr. Ludovick Lopa, MD, MPH</p>
-                <!-- Moving Welcome Text -->
-                <div class="w-full overflow-hidden mt-8">
-                   <div class="text-6xl md:text-8xl font-bold gradient-text animate-bounce-horizontal">WELCOME</div>
-                </div>
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects">
+            
+            <div class="project">
+                <h3>My First Website with Graph AI</h3>
+                <p>A foundational project exploring the integration of AI-powered graphs into a web interface.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
-        </section>
 
-        <!-- About Me Section -->
-        <section id="about-me" class="py-20">
-            <div class="container mx-auto px-6">
-                <div class="section-card rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-                    <div class="md:w-1/3 text-center">
-                        <!-- User's Photo -->
-                        <img src="https://github.com/Ludovick-Lopa/myfirst-website-with-graph-ai/blob/main/Passport2_Lopa.jpg?raw=true" alt="Dr. Ludovick Lopa" class="rounded-full w-48 h-48 mx-auto border-4 border-sky-400 object-cover">
-                    </div>
-                    <div class="md:w-2/3">
-                        <h2 class="text-3xl font-bold mb-4 gradient-text">About Me</h2>
-                        <p class="text-gray-300 leading-relaxed">
-                            I am a medical doctor and public health advocate with over a decade of experience transforming healthcare systems in underserved communities. I lead with empathy, data, and a commitment to Quality Improvement—empowering healthcare teams to deliver compassionate, high-impact care that truly changes lives. This AI course offers a powerful entry point for professionals with no data analytics background, unlocking the potential of large language models (LLMs) to drive smarter, more meaningful decisions.
-                        </p>
-                    </div>
-                </div>
+            <div class="project">
+                <h3>Workshop 2: Automated Data Analysis</h3>
+                <p>Analyzed Gapminder data to explore relationships between two global indicators using AI tools.</p>
+                <a href="https://github.com/Ludovick-Lopa/myfirst-website-with-graph-ai/blob/main/ai_week2_lopa.html" target="_blank">View Report</a>
             </div>
-        </section>
 
-        <!-- About the Course Section -->
-        <section id="about-course" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-6">
-                 <div class="section-card rounded-lg p-8 md:p-12">
-                    <h2 class="text-3xl font-bold text-center mb-8 gradient-text">About the Course</h2>
-                    <p class="text-gray-300 text-center max-w-3xl mx-auto mb-12">
-                        This 8-week course, "Generative AI for Work & Research Productivity," focuses on leveraging no-code AI tools for task automation. It provides hands-on experience with Large Language Models (LLMs) to generate text, create websites, analyze data, and automate workflows, enhancing productivity in professional and research environments.
-                    </p>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="bg-gray-800 p-6 rounded-lg">
-                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 1: Websites, Docs & Presentations</h3>
-                            <p class="text-gray-400 text-sm">Learn how LLMs work, generate structured text (Markdown, HTML), build simple websites, and design presentations using AI assistants.</p>
-                        </div>
-                        <div class="bg-gray-800 p-6 rounded-lg">
-                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 2: AI-Automated Data Analysis</h3>
-                            <p class="text-gray-400 text-sm">Master AI tools for data analysis, file manipulation, and creating automated reports and visualizations from datasets.</p>
-                        </div>
-                        <div class="bg-gray-800 p-6 rounded-lg">
-                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 3: GenAI for Research & Text Analysis</h3>
-                            <p class="text-gray-400 text-sm">Explore AI techniques for literature searches, text analysis, knowledge synthesis, and extracting insights from large text collections.</p>
-                        </div>
-                        <div class="bg-gray-800 p-6 rounded-lg">
-                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 4: Custom GPTs and Chatbots</h3>
-                            <p class="text-gray-400 text-sm">Build custom chatbots for research assistance and knowledge management, understanding LLM architecture and retrieval augmentation.</p>
-                        </div>
-                        <div class="bg-gray-800 p-6 rounded-lg">
-                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 5: AI for Task Automation</h3>
-                            <p class="text-gray-400 text-sm">Discover strategies for automating repetitive research tasks, setting up email automations, and designing AI agents for complex workflows.</p>
-                        </div>
-                        <div class="bg-gray-800 p-6 rounded-lg">
-                            <h3 class="font-semibold text-lg text-sky-400 mb-2">Module 6 & 7: Communication & Capstone</h3>
-                            <p class="text-gray-400 text-sm">Learn to use AI for research dissemination by creating summaries and visuals, and complete a capstone project to showcase your skills.</p>
-                        </div>
-                    </div>
-                 </div>
             </div>
-        </section>
-
-        <!-- My Weekly Submissions Section -->
-        <section id="submissions" class="py-20">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12 gradient-text">My Weekly Submissions</h2>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Submission Card 1 -->
-                    <div class="submission-card section-card rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-white mb-2">Week 1</h3>
-                        <p class="text-gray-400 mb-4">Websites, Documents & Presentations</p>
-                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
-                    </div>
-                    <!-- Submission Card 2 -->
-                    <div class="submission-card section-card rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-white mb-2">Week 2</h3>
-                        <p class="text-gray-400 mb-4">AI-Automated Data Analysis</p>
-                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
-                    </div>
-                    <!-- Submission Card 3 -->
-                    <div class="submission-card section-card rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-white mb-2">Week 3</h3>
-                        <p class="text-gray-400 mb-4">GenAI for Research & Text Analysis</p>
-                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
-                    </div>
-                    <!-- Submission Card 4 -->
-                    <div class="submission-card section-card rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-white mb-2">Week 4</h3>
-                        <p class="text-gray-400 mb-4">Custom GPTs and Chatbots</p>
-                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
-                    </div>
-                    <!-- Submission Card 5 -->
-                    <div class="submission-card section-card rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-white mb-2">Week 5</h3>
-                        <p class="text-gray-400 mb-4">AI for Task Automation</p>
-                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
-                    </div>
-                    <!-- Submission Card 6 -->
-                    <div class="submission-card section-card rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-white mb-2">Week 6</h3>
-                        <p class="text-gray-400 mb-4">GenAI for Communication</p>
-                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
-                    </div>
-                    <!-- Submission Card 7 -->
-                    <div class="submission-card section-card rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-white mb-2">Week 7</h3>
-                        <p class="text-gray-400 mb-4">Capstone Project</p>
-                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
-                    </div>
-                    <!-- Submission Card 8 -->
-                    <div class="submission-card section-card rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-white mb-2">Week 8</h3>
-                        <p class="text-gray-400 mb-4">Final Showcase</p>
-                        <a href="#" class="text-sky-400 hover:text-sky-300">View Submission &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-6">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <p>&copy; 2025 Ludovick L. Lopa. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    </div>
 
 </body>
 </html>
